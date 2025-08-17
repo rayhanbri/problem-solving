@@ -1,13 +1,33 @@
 // Problem 1: Reverse a String
 // Write a function that takes a string and returns it reversed.
 
-function reversedString(str){
-    const string = str
-    const split=string.split("")
-    const reverse=split.reverse()
-    const join=reverse.join("")
-    console.log(join)
+// function reversedString(str){
+//     const string = str
+//     const split=string.split("")
+//     const reverse=split.reverse()
+//     const join=reverse.join("")
+//     console.log(join)
+// }
+
+// reversedString('mam')
+
+
+// Problem 2: Count Vowels in a String
+// Write a function that counts how many vowels (a, e, i, o, u) are in a given string.
+
+function vowelCounter(str){
+    const vowel ="aeiouAEIOU";
+    let count = 0 ;
+
+    for(let char of str ){
+        // console.log(char)
+        if(vowel.includes(char)){
+            count ++;
+        }
+    }
+    console.log(count)
 }
 
-reversedString('rayhan')
+vowelCounter('helohibyebye')
+
 
