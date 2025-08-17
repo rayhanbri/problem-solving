@@ -34,18 +34,29 @@
 // Problem 3: Check for Palindrome
 // Write a function that checks if a string is a palindrome (reads the same forward and backward).
 
-function palindromeChecker (palindrome){
-    const reverse= palindrome.split("").reverse().join("")
+// function palindromeChecker (palindrome){
+//     const reverse= palindrome.split("").reverse().join("")
 
-    if(palindrome === reverse){
-        return true;
-    }
-    else{
-        return false;
-    }
+//     if(palindrome === reverse){
+//         return true;
+//     }
+//     else{
+//         return false;
+//     }
    
+// }
+
+// console.log(palindromeChecker("mam"))
+
+
+// Problem 4: Find the Maximum Number
+// Write a function that takes an array of numbers and returns the largest number.
+
+function findLargeNumber(array){
+    return Math.max(...array)
 }
 
-console.log(palindromeChecker("mam"))
+console.log(findLargeNumber([1,3,10]))
+
 
 
