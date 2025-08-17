@@ -52,11 +52,26 @@
 // Problem 4: Find the Maximum Number
 // Write a function that takes an array of numbers and returns the largest number.
 
-function findLargeNumber(array){
-    return Math.max(...array)
+// function findLargeNumber(array){
+//     return Math.max(...array)
+// }
+
+// console.log(findLargeNumber([1,3,10]))
+
+
+// Problem 5: Remove Duplicates from an Array Write a function that removes all duplicate numbers from an array.
+
+function removeDuplicate(array) {
+    const newArray = [];
+    for (let i = 0; i < array.length; i++) {
+        if (!newArray.includes(array[i])) {
+            newArray.push(array[i]);
+        }
+    }
+    return newArray;
 }
 
-console.log(findLargeNumber([1,3,10]))
+console.log(removeDuplicate([1,3,3,1]))
 
 
 
