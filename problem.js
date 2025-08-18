@@ -90,22 +90,39 @@
 // Problem 7: Find Even Numbers in an Array
 // Write a function that returns all even numbers from a given array
 
-function findEvenNumbers(arr) {
-    let evenNumbers = []; 
-
-    for (let i = 0; i < arr.length; i++) {
-        let current = arr[i]; 
+// function findEvenNumbers(arr) {
+//     let evenNumbers = []; 
+//     for (let i = 0; i < arr.length; i++) {
+//         let current = arr[i]; 
 
         
-        if (current % 2 === 0) {
-            evenNumbers.push(current);
-        }
-    }
+//         if (current % 2 === 0) {
+//             evenNumbers.push(current);
+//         }
+//     }
+//     return evenNumbers;
+// }
+
+// console.log(findEvenNumbers([1, 2, 3, 4, 5, 6])); 
 
 
-    return evenNumbers;
-}
+// Problem 8: Capitalize First Letter of Each Word
 
 
-console.log(findEvenNumbers([1, 2, 3, 4, 5, 6])); 
+// function capitalizeWords(sentence) {
+//     let words = sentence.split(" ");
+
+    
+//     for (let i = 0; i < words.length; i++) {
+//         let word = words[i];
+
+        
+//         words[i] = word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+//     }
+
+//     return words.join(" ");
+// }
+
+// console.log(capitalizeWords("hello world from rayhan"));
+
 
