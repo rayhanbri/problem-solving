@@ -126,3 +126,47 @@
 // console.log(capitalizeWords("hello world from rayhan"));
 
 
+//Problem-09 Write a function that calculates the factorial of a number using a loop.
+
+// 5*4*3*2*1=120 
+
+// function factorial(num) {
+//     let result = 1;
+//     for (let i = 1; i <= num; i++) {
+//         result = result * i;  
+//     }
+//     return result;
+// }
+
+// console.log(factorial(5));
+
+
+// Problem 10: PingPong Challenge
+// Write a function that prints numbers from 1 to 20.
+
+function pingPongChallenge() {
+  let result = []; 
+
+  for (let i = 1; i <= 20; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      result.push("PingPong");
+    } else if (i % 3 === 0) {
+      result.push("Ping");
+    } else if (i % 5 === 0) {
+      result.push("Pong");
+    } else {
+      result.push(i);
+    }
+  }
+
+  console.log(result.join(", "));
+}
+
+// Run function
+pingPongChallenge();
+
+
+
+
+
+
