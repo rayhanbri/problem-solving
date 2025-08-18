@@ -77,14 +77,35 @@
 // Problem 6: Sum of All Numbers in an Array
 // Write a function that returns the sum of all numbers in an array.
 
-function sum(array){
-    let sum =0;
-    for(let number of array){
-        // sum = sum + number;
-        sum += number;
-    }
-    return sum;
-}
-console.log(sum([1,2,3]))
+// function sum(array){
+//     let sum =0;
+//     for(let number of array){
+//         // sum = sum + number;
+//         sum += number;
+//     }
+//     return sum;
+// }
+// console.log(sum([1,2,3]))
 
+// Problem 7: Find Even Numbers in an Array
+// Write a function that returns all even numbers from a given array
+
+function findEvenNumbers(arr) {
+    let evenNumbers = []; 
+
+    for (let i = 0; i < arr.length; i++) {
+        let current = arr[i]; 
+
+        
+        if (current % 2 === 0) {
+            evenNumbers.push(current);
+        }
+    }
+
+
+    return evenNumbers;
+}
+
+
+console.log(findEvenNumbers([1, 2, 3, 4, 5, 6])); 
 
