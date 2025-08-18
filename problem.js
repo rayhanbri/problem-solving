@@ -61,17 +61,30 @@
 
 // Problem 5: Remove Duplicates from an Array Write a function that removes all duplicate numbers from an array.
 
-function removeDuplicate(array) {
-    const newArray = [];
-    for (let i = 0; i < array.length; i++) {
-        if (!newArray.includes(array[i])) {
-            newArray.push(array[i]);
-        }
+// function removeDuplicate(array) {
+//     const newArray = [];
+//     for (let i = 0; i < array.length; i++) {
+//         if (!newArray.includes(array[i])) {
+//             newArray.push(array[i]);
+//         }
+//     }
+//     return newArray;
+// }
+
+// console.log(removeDuplicate([1,3,3,1]))
+
+
+// Problem 6: Sum of All Numbers in an Array
+// Write a function that returns the sum of all numbers in an array.
+
+function sum(array){
+    let sum =0;
+    for(let number of array){
+        // sum = sum + number;
+        sum += number;
     }
-    return newArray;
+    return sum;
 }
-
-console.log(removeDuplicate([1,3,3,1]))
-
+console.log(sum([1,2,3]))
 
 
